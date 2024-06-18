@@ -2,13 +2,80 @@
 <html>
     <head>
         <title>Jauza Konversi Suhu</title>
+        <!-- Ini Link CSS -->
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body>
+
+    <body bgcolor="lightblue">
         <header>
-            <h1>Website Konversi Suhu</h1>
+            <!-- Judul -->
+            <h1 align="center">Website Konversi Suhu</h1>
         </header>
+
+        <!-- Main Content -->
+        <main>
+            <h5 align="center">Masukkan suhu derajat Celcius (&deg;C) pada kotak dibawah ini, kemudian klik tombol Konversi untuk mendapatkan hasil dalam bentuk suhu derajat Fahrenheit (&deg;F).</h5>
+
+            <section class="suhu-container">
+                <!-- Section Celcius --> 
+                <section>
+                    <header>
+                        <h4>Celcius (&deg;C)</h4>
+                    </header>
+
+                    <section>
+                        <textarea class="kotak-suhu"></textarea>
+                        <br>
+                        <section>
+                            <button class="button green-color">Konversi</button>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Section Fahrenheit -->
+                <section>
+                    <header>
+                        <h4>Fahrenheit (&deg;F)</h4>
+                    </header>
+
+                    <section>
+                        <textarea class="kotak-suhu"></textarea>
+                    </section>
+                </section>
+            </section>
+
+            <section align="center">
+                <button class="button red-color">Reset</button> <button class="button blue-color">Reverse</button>
+            </section>
+
+             <!-- Section Calculate -->
+             <section class="result-container">
+                <header>
+                    <h4>Conversion Calculate</h4>
+                </header>
+
+                <section>
+                    <textarea class="kotak-calculate"></textarea>
+                </section>
+             </section>
+
+             <hr>
+
+             <!-- Section Formula/Info -->
+             <section>
+                <header>
+                    <h3 align="center">Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h3>
+                </header>
+            
+                <p align="center">Suhu <span class="subject-info">S</span> derajat Fahrenheit (&deg;F) sama dengan suhu <span class="subject-info">S</span> dalam derajat Celcius (&deg;C)</p>
+
+                <p align="center">
+                    <span class="subject-info">S</span><sub>(&deg;F)</sub> = (<span class="subject-info">S</span><sub>(&deg;C)</sub> x 9/5) + 32 <strong>atau</strong> <span class="subject-info">S</span><sub>(&deg;F)</sub> = (<span class="subject-info">S</span><sub>(&deg;C)</sub> x 1.8) + 32
+                </p>
+             </section>
+        </main>
         
+        <!-- Ini Link Javascript -->
         <script src="js/script.js"></script>
     </body>
 </html>
