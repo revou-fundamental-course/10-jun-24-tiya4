@@ -2,11 +2,11 @@
 
 .background-img {
     height: 100vh;
-    background-image: url('../assets/pexels-minan1398-813269.jpg');
+    background-image: url('../assets/pexels-nietjuh-776656.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    backdrop-filter: blur(1px)
+    backdrop-filter: blur(5px)
 }
 
 .suhu-container {
@@ -25,47 +25,56 @@ textarea {
 
 .kotak-suhu {
     width: 150px;
-    height: 40px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid rgba(111, 152, 214, 0.993);
-    border-radius: 10px;
-    background-color: rgb(223, 217, 217);
-    font-size: 10px;
-}
-
-.kotak-calculate {
-    width: 300px; 
     height: 60px;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 2px solid rgba(111, 152, 214, 0.993);
+    border: 2px solid rgba(9, 104, 9, 0.767);
     border-radius: 10px;
     background-color: rgb(223, 217, 217);
     font-size: 20px;
+    align-content: center;
+}
+
+.kotak-calculate {
+    width: 350px; 
+    height: 70px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid rgba(9, 104, 9, 0.767);
+    border-radius: 10px;
+    background-color: rgb(223, 217, 217);
+    font-size: 20px;
+    align-content: center;
 }
 
 .button {
-    height: 25px;
-    background-color: cornflowerblue;
-    border: 0px;
-    border-radius: 15px;
+    height: 30px;
+    border: 2px;
+    border-radius: 10px;
 }
 
 .green-color {
-    background-color: lightgreen;
+    background-color: rgb(31, 138, 31)
 }
 
 .red-color {
-    background-color: lightsalmon;
+    background-color: rgb(247, 95, 35);
 }
 
 .blue-color {
-    background-color: cornflowerblue;
+    background-color: rgba(88, 133, 218, 0.89);
 }
 
 .white-color {
     color: white;
+}
+
+.black-color {
+    color: black;
+}
+
+.font-type {
+    font
 }
 
 .subject-info {
