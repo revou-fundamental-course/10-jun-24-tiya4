@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jauza Konversi Suhu</title>
         <!-- Ini Link CSS -->
         <link rel="stylesheet" href="css/styles.css">
+        <!-- Ini Link Javascript -->
+        <script src="http://127.0.0.1:5500/script.js" type="text/javascript"></script>
     </head>
 
     <body class="background-img">
@@ -20,14 +24,14 @@
                 <!-- Section Celcius --> 
                 <section>
                     <header>
-                        <h4 class="black-color">Celcius (&deg;C)</h4>
+                        <h4 for="inputTemp" class="black-color">Celcius (&deg;C)</h4>
                     </header>
 
                     <section>
-                        <textarea class="kotak-suhu"></textarea>
+                        <input type="number" id="inputTemp" class="kotak-suhu"></input>
                         <br>
                         <section>
-                            <button class="button green-color">Konversi</button> <button class="button red-color">Reset</button> 
+                            <button onclick="convertTemp()" class="button green-color">Konversi</button> <button onclick="reset()" class="button red-color">Reset</button> 
                         </section>
                     </section>
                 </section>
@@ -35,27 +39,27 @@
                 <!-- Section Fahrenheit -->
                 <section>
                     <header>
-                        <h4 class="black-color">Fahrenheit (&deg;F)</h4>
+                        <h4 for="inputFahrenheit" class="black-color">Fahrenheit (&deg;F)</h4>
                     </header>
 
                     <section>
-                        <textarea class="kotak-suhu"></textarea>
+                        <input type="number" id="inputFahrenheit" class="kotak-suhu"></input>
                     </section>
                 </section>
             </section>
 
             <section align="center">
-                <button class="button blue-color">Reverse</button>
+                <button onclick="reverse()" class="button blue-color">Reverse</button>
             </section>
 
              <!-- Section Calculate -->
              <section class="result-container">
                 <header>
-                    <h4 class="black-color">Conversion Calculate</h4>
+                    <h4 class="white-color">Conversion Calculate</h4>
                 </header>
 
                 <section>
-                    <textarea class="kotak-calculate"></textarea>
+                    <input id="resultCalculate" class="kotak-calculate"></input>
                 </section>
              </section>
 
@@ -74,8 +78,5 @@
                 </p>
              </section>
         </main>
-        
-        <!-- Ini Link Javascript -->
-        <script src="js/script.js"></script>
     </body>
 </html>
