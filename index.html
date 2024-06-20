@@ -29,7 +29,12 @@
                         <input type="number" id="inputTemp" class="kotak-suhu"></input>
                         <br>
                         <section>
-                            <button onclick="convertTemp()" id="myButton; inputTemp" class="button green-color">Konversi</button> <button onclick="reset()" id="myButton; inputTemp; resultCalculate" class="button red-color">Reset</button> 
+                            <button onclick="convertTemp()" type="button" id="inputTemp" class="button green-color">
+                                Konversi
+                            </button>
+                            <button onclick="reset()" type="button" id="inputTemp; resulfahrenheit; resultCalculate" class="button red-color">
+                                Reset
+                            </button> 
                         </section>
                     </section>
                 </section>
@@ -47,7 +52,9 @@
             </section>
 
             <section align="center">
-                <button onclick="reverse()" id= "myButton; resultCalculate" class="button blue-color">Reverse</button>
+                <button onclick="reverse()" type="button" id= "resultCalculate" class="button blue-color">
+                    Reverse
+                </button>
             </section>
 
              <!-- Section Calculate -->
@@ -57,7 +64,7 @@
                 </header>
 
                 <section>
-                    <input type="formula" id="inputTemp; resultCalculate" class="kotak-calculate"></input>
+                    <input type="text" id="inputTemp; resultCalculate" class="kotak-calculate"></input>
                 </section>
              </section>
 
@@ -79,14 +86,6 @@
 
         <!-- Ini Link Javascript -->
         <script src="js/script.js"></script>
-        <script>
-            var button = document.querySelector('button');
-    
-            button.addEventListener('click', function() {
-                convertTemp();
-                reverse();
-                reset();
-            });
         </script>
     </body>
 </html>
