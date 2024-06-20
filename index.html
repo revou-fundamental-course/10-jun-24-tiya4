@@ -6,8 +6,6 @@
         <title>Jauza Konversi Suhu</title>
         <!-- Ini Link CSS -->
         <link rel="stylesheet" href="css/styles.css">
-        <!-- Ini Link Javascript -->
-        <script src="http://127.0.0.1:5500/script.js" type="text/javascript"></script>
     </head>
 
     <body class="background-img">
@@ -31,7 +29,7 @@
                         <input type="number" id="inputTemp" class="kotak-suhu"></input>
                         <br>
                         <section>
-                            <button onclick="convertTemp()" class="button green-color">Konversi</button> <button onclick="reset()" class="button red-color">Reset</button> 
+                            <button onclick="convertTemp()" id="inputTemp; resultCalculate" class="button green-color">Konversi</button> <button onclick="reset()" id="inputTemp; inputFahrenheit; resultCalculate" class="button red-color">Reset</button> 
                         </section>
                     </section>
                 </section>
@@ -43,23 +41,23 @@
                     </header>
 
                     <section>
-                        <input type="number" id="inputFahrenheit" class="kotak-suhu"></input>
+                        <input type="number" id="inputTemp; resultCalculate" class="kotak-suhu"></input>
                     </section>
                 </section>
             </section>
 
             <section align="center">
-                <button onclick="reverse()" class="button blue-color">Reverse</button>
+                <button onclick="reverse()" id="inputFahrenheit; resultCalculate" class="button blue-color">Reverse</button>
             </section>
 
              <!-- Section Calculate -->
              <section class="result-container">
                 <header>
-                    <h4 class="white-color">Conversion Calculate</h4>
+                    <h4 for="resultCalculate" class="white-color">Conversion Calculate</h4>
                 </header>
 
                 <section>
-                    <input id="resultCalculate" class="kotak-calculate"></input>
+                    <input type="formula" id="inputTemp; resultCalculate" class="kotak-calculate"></input>
                 </section>
              </section>
 
@@ -78,5 +76,8 @@
                 </p>
              </section>
         </main>
+
+        <!-- Ini Link Javascript -->
+        <script src="js/script.js"></script>
     </body>
 </html>
