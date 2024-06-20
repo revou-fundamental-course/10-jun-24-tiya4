@@ -29,7 +29,7 @@
                         <input type="number" id="inputTemp" class="kotak-suhu"></input>
                         <br>
                         <section>
-                            <button onclick="convertTemp()" id="inputTemp; resultCalculate" class="button green-color">Konversi</button> <button onclick="reset()" id="inputTemp; inputFahrenheit; resultCalculate" class="button red-color">Reset</button> 
+                            <button onclick="convertTemp()" id="myButton; inputTemp" class="button green-color">Konversi</button> <button onclick="reset()" id="myButton; inputTemp; resultCalculate" class="button red-color">Reset</button> 
                         </section>
                     </section>
                 </section>
@@ -37,23 +37,23 @@
                 <!-- Section Fahrenheit -->
                 <section>
                     <header>
-                        <h4 for="inputFahrenheit" class="black-color">Fahrenheit (&deg;F)</h4>
+                        <h4 for="inputTemp" class="black-color">Fahrenheit (&deg;F)</h4>
                     </header>
 
                     <section>
-                        <input type="number" id="inputTemp; resultCalculate" class="kotak-suhu"></input>
+                        <input type="number" id="resulfahrenheit" class="kotak-suhu"></input>
                     </section>
                 </section>
             </section>
 
             <section align="center">
-                <button onclick="reverse()" id="inputFahrenheit; resultCalculate" class="button blue-color">Reverse</button>
+                <button onclick="reverse()" id= "myButton; resultCalculate" class="button blue-color">Reverse</button>
             </section>
 
              <!-- Section Calculate -->
              <section class="result-container">
                 <header>
-                    <h4 for="resultCalculate" class="white-color">Conversion Calculate</h4>
+                    <h4 for="inputTemp" class="white-color">Conversion Calculate</h4>
                 </header>
 
                 <section>
@@ -79,5 +79,14 @@
 
         <!-- Ini Link Javascript -->
         <script src="js/script.js"></script>
+        <script>
+            var button = document.querySelector('button');
+    
+            button.addEventListener('click', function() {
+                convertTemp();
+                reverse();
+                reset();
+            });
+        </script>
     </body>
 </html>
